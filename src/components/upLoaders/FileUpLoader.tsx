@@ -6,13 +6,16 @@ import {
   Image,
   Button,
   Label,
-  Header
+  Header,
+  Message
 } from 'semantic-ui-react';
 import { getImageIpfsHash } from './utils/getIpfsHash';
 
 const FileUpLoader = () => {
   const [buffer, setBuffer] = useState<string | ArrayBuffer>('');
   const [resultHash, setResultHash] = useState('');
+  const [load, setLoad] = useState<boolean>(true);
+  const [end, setEnd] = useState(false);
 
   const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files as FileList;
@@ -29,9 +32,11 @@ const FileUpLoader = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('submitted...');
+    setLoad(false);
     const hash: string = await getImageIpfsHash(buffer);
     setResultHash(hash);
     console.log(hash);
+    setEnd(true);
   };
 
   return (
@@ -46,6 +51,8 @@ const FileUpLoader = () => {
             <Button>Submit</Button>
           </Form>
         </Segment>
+        {load ? <></> : <Message as="h3">Uploading...</Message>}
+        {end ? <Message positive>End</Message> : <></>}
         <Segment>IPFS Hash : {resultHash}</Segment>
         <Segment>
           IPFS Link is <a href={`https://ipfs.io/ipfs/${resultHash}`}>here</a>
