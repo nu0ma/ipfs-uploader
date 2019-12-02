@@ -40,7 +40,14 @@ const TextUpLoader: FC = () => {
           {end ? <Message positive>End</Message> : <></>}
           <Segment>IPFS Hash : {resultHash}</Segment>
           <Segment>
-            IPFS Link is <a href={`https://ipfs.io/ipfs/${resultHash}`}>here</a>
+            IPFS Link is{' '}
+            <a
+              href={`https://ipfs.io/ipfs/${resultHash}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              here
+            </a>
           </Segment>
         </Segment>
       </Segment.Group>
