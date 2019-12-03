@@ -8,7 +8,7 @@ export const getTextIpfsHash = async (data: string) => {
   return hash;
 };
 
-export const getImageIpfsHash = async (data: string | ArrayBuffer) => {
+export const getImageIpfsHash = async (data: ArrayBuffer) => {
   const result = await ipfs.files.add(data);
   const hash = await result[0].hash;
   return hash;

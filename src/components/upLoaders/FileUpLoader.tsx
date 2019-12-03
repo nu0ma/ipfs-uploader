@@ -3,7 +3,7 @@ import { Segment, Form, Input, Button, Message } from 'semantic-ui-react';
 import { getImageIpfsHash } from './utils/getIpfsHash';
 
 const FileUpLoader = () => {
-  const [buffer, setBuffer] = useState<string | ArrayBuffer>('');
+  const [buffer, setBuffer] = useState<ArrayBuffer>(new ArrayBuffer(0));
   const [resultHash, setResultHash] = useState('');
   const [load, setLoad] = useState<boolean>(true);
   const [end, setEnd] = useState(false);
