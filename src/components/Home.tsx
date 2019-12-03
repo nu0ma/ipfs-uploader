@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { List, Segment, Header } from 'semantic-ui-react';
-import { Wrapper } from '../components/styles/Wrapper';
+import { Wrapper } from '../styles/Wrapper';
 
 const Home = () => {
   return (

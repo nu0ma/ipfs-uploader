@@ -1,6 +1,6 @@
 import React from 'react';
 import FileUpLoader from '../components/upLoaders/FileUpLoader';
-import { Wrapper } from '../components/styles/Wrapper';
+import { Wrapper } from '../styles/Wrapper';
 
 const FilePage = () => {
   return (
