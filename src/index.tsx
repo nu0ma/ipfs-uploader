@@ -11,8 +11,6 @@ import FilePage from './pages/FilePage';
 const Root = () => {
   return (
     <>
-      {/* <TextUploaders />
-      <ImageUpLoaders /> */}
       <Router>
         <Route exact path="/" component={Home} />
         <Route path="/text" component={TextPage} />

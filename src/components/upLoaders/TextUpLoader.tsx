@@ -23,7 +23,6 @@ const TextUpLoader: FC = () => {
   return (
     <>
       <h1>Text Uploader</h1>
-
       <Segment.Group>
         <Segment>
           <Form onSubmit={handleSubmit}>

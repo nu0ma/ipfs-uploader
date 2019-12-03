@@ -1,6 +1,7 @@
 import React from 'react';
 import TextUpLoader from '../components/upLoaders/TextUpLoader';
-import styled from 'styled-components';
+import { Wrapper } from '../components/styles/Wrapper';
+
 const TextPage = () => {
   return (
     <Wrapper>
@@ -8,11 +9,5 @@ const TextPage = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  margin: 0 auto;
-  padding: 50px;
-  width: 80%;
-`;
 
 export default TextPage;

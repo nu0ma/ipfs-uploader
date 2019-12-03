@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Segment,
-  Form,
-  Input,
-  Image,
-  Button,
-  Label,
-  Header,
-  Message
-} from 'semantic-ui-react';
+import { Segment, Form, Input, Button, Message } from 'semantic-ui-react';
 import { getImageIpfsHash } from './utils/getIpfsHash';
 
 const FileUpLoader = () => {

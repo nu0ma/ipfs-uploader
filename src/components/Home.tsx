@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { List, Segment, Header } from 'semantic-ui-react';
-import styled from 'styled-components';
+import { Wrapper } from '../components/styles/Wrapper';
 
 const Home = () => {
   return (
@@ -20,12 +20,5 @@ const Home = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  /* text-align: center; */
-  margin: 0 auto;
-  padding: 50px;
-  width: 80%;
-`;
 
 export default Home;
