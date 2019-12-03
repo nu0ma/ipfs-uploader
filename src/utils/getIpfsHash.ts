@@ -1,4 +1,4 @@
-import ipfs from '../../../ipfs/ipfs';
+import ipfs from '../ipfs/ipfs';
 
 export const getTextIpfsHash = async (data: string) => {
   const content = await ipfs.Buffer.from(data);

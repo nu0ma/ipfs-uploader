@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Form, Button, Segment, Message } from 'semantic-ui-react';
-import { getTextIpfsHash } from './utils/getIpfsHash';
+import { getTextIpfsHash } from '../../utils/getIpfsHash';
 
 const TextUpLoader: FC = () => {
   const [inputText, setText] = useState('');

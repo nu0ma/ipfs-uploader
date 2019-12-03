@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Segment, Form, Input, Button, Message } from 'semantic-ui-react';
-import { getImageIpfsHash } from './utils/getIpfsHash';
+import { getImageIpfsHash } from '../../utils/getIpfsHash';
 
 const FileUpLoader = () => {
   const [buffer, setBuffer] = useState<ArrayBuffer>(new ArrayBuffer(0));
