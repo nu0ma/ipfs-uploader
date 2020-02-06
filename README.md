@@ -8,7 +8,3 @@
 ## Usage
 
 Just go to [here](https://ipfsuploader-d6luh021e.now.sh/) , then send your data.
-
-## Link
-
-https://ipfsuploader-d6luh021e.now.sh
